@@ -6,17 +6,26 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
             "name": "Launch EmployeemanagerApplication",
             "request": "launch",
-            "mainClass": "tech.getarrays.employeemanager.EmployeemanagerApplication",
+            "mainClass": "com.logicactive.employeemanager.EmployeemanagerApplication",
             "projectName": "employeemanager"
         },
         {
-            "type": "pwa-chrome",
+            "type": "java",
+            "name": "Spring Boot-EmployeemanagerApplication<employeemanager>",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "mainClass": "tech.logicactive.employeemanager.EmployeemanagerApplication",
+            "projectName": "employeemanager",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
